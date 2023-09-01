@@ -1,0 +1,44 @@
+:root{
+    --antique: #fee2b7; /* RGB 254 226 183 */
+    --caribbean: #34676f; /* RGB 52 103 11 */
+    --jet: #39393A; /* RBG 57 57 58*/
+}
+
+body{
+    background-color: var(--antique);
+}
+
+/* Navbar Styling */
+.navbar-custom{
+    background-color: var(--jet);
+}
+
+.navbar-custom .navbar-nav .nav-link{
+    color: var(--antique);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28252, 240, 223, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    border: 1px solid var(--antique);
+}
+
+.navbar-brand{
+    filter: invert(97%) sepia(88%) saturate(592%) hue-rotate(309deg) brightness(98%) contrast(105%);
+}
+
+/* Footer Styling */
+footer{
+    display: block;
+    padding: 80px;
+    background-color: var(--jet);
+    color: var(--antique);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
