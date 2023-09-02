@@ -32,7 +32,7 @@ body{
 /* Footer Styling */
 footer{
     display: block;
-    padding: 80px;
+    padding: 50px;
     background-color: var(--jet);
     color: var(--antique);
 }
@@ -59,6 +59,14 @@ footer{
     padding: 0 20px;
   }
 
-  .aboutBlurb{
-    padding: 0 20px;
+  .blurbs{
+    padding: 20px;
+  }
+.cardsArea{
+    padding: 20px;
+}
+
+  .card-body{
+    background-color: var(--caribbean);
+    color: var(--antique);
   }
