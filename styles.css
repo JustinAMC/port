@@ -39,6 +39,26 @@ footer{
 
 .footer-container{
     display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
+    flex-direction: column;
 }
+
+.column-right{
+    margin-top: 50px;
+}
+
+.image{
+    display: block;
+    margin: 40px auto;
+    width: 90%;
+    border: 10px solid var(--caribbean);
+  }
+
+  figcaption{
+    margin-top: -30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .aboutBlurb{
+    padding: 0 20px;
+  }
