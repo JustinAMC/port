@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -46,6 +46,51 @@
           </div>
         </div>
       </nav>
+      <!-- Contact Blurb -->
+      <div class="blurbs">
+        <h1>Let's Stay in Touch</h1>
+        <h3>Feel free to send me an email. <br> I'll respond ASAP.
+        </h3>
+    
+      <!-- Form -->
+      <div class="form">
+            <form action="https://formsubmit.co/justinamcruz@outlook.com" method="POST">
+
+              <!--Name Input-->
+              <div>
+                  <input type="text" name="name" id="name" placeholder="Enter Your Name" class="input-text" required>
+              </div>
+
+              
+              <!--Email Input-->
+              <div>
+                  <input type ="text" name="email" id="email" placeholder="Enter Your Email"  class="input-text" required>
+              </div>
+
+              <!--Phone Input-->
+              <div>
+                  <input type ="number" name="phone" id="phone" placeholder="Enter Your Phone Number"  class="input-number" required>
+              </div>
+
+              
+              <!--Message Input-->
+              <textarea rows="3" cols="35" placeholder="Leave a Message" 
+              type="text" name="message" id="message" placeholder="Leave a Message" class="input-text" required></textarea>
+
+              <!--Misc.-->
+              <!--Captcha Disable-->
+              <input type="hidden" name="_captcha" value="false">
+
+              <!--Email Subject-->
+              <input type="hidden" name="_subject" value="Visitor Submission Received">
+
+              <!--Submit Button-->
+              <div class="submit">
+                  <button type="submit" class="submitBtn">Submit</button>
+              </div>
+          </form>
+        </div>
+      </div>
 
       <!-- Footer -->
       <footer>
@@ -59,7 +104,7 @@
                 <h4>Or contact me directly:</h4>
                 <button>Send me an email.</button>
             </div>
-        </div>
+      </div>
       </footer>
 
 
