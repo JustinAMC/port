@@ -14,6 +14,9 @@ body{
 }
 
 .navbar-custom .navbar-nav .nav-link{
+    font-family: liberation-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: var(--antique);
 }
 
@@ -31,19 +34,9 @@ body{
 
 /* Footer Styling */
 footer{
-    display: block;
     padding: 50px;
     background-color: var(--jet);
     color: var(--antique);
-}
-
-.footer-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.column-right{
-    margin-top: 50px;
 }
 
 .image{
@@ -54,14 +47,18 @@ footer{
   }
 
 figcaption{
-    width: 90%;
+    width: 80%;
     margin: auto;
     font-size: 12px;
+    font-family: liberation-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
   }
 
-.blurbs{
+.bodyArea{
     padding: 20px;
   }
+
 .cardsArea{
     margin-bottom: 40px;
     padding: 0px 20px;
@@ -70,6 +67,9 @@ figcaption{
 .card-body{
     background-color: var(--caribbean);
     color: var(--antique);
+    font-family: liberation-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
 input, textarea{
@@ -78,10 +78,9 @@ input, textarea{
     border-bottom: 2px solid var(--caribbean);
     padding: 12px 20px;
     margin-top: 15px;
-}
-
-.input-text{
-    font-family: var(--font-family-montserrat);
+    font-family: liberation-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .submit{
@@ -94,7 +93,7 @@ input, textarea{
 .btn{
     background-color: var(--jet);
     color: var(--antique);
-    padding: 5px 10px;
+    padding: 0px 10px;
     cursor: pointer;
     border: 2px solid var(--jet);
 }
@@ -105,15 +104,109 @@ input, textarea{
     padding: 10px 30px;
     cursor: pointer;
     border: none;
+    font-family: liberation-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .heroPhoto{
     width: 100vw;
 }
 
-.heroArea{
+.heroAreaImage{
     padding-top: 20px;
 }
+
+.heroAreaText{
+    padding: 20px;
+}
+
 figure{
     padding-top: 20px;
+}
+
+h1,h2{
+    font-family: liberation-serif, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.subtitle,
+h3,
+h5,
+button{
+    font-family: liberation-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footerBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--antique);
+    color: var(--jet);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* .footerBtn:hover {
+    background-color: #0056b3;
+  } */
+
+.workHeading{
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Media Quieries */
+@media (min-width: 800px){
+    .heroAreaText{
+    font-size: 28px;
+    }
+
+    .bodyArea{
+        width:80%;
+        margin: auto;
+        font-size: 21px;
+    }
+    .footer-container{
+        display: flex;
+        gap: 30%;
+        padding: 20px;
+    }
+    .column-right{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .heroAreaText{
+        padding: 40px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .heroAreaImage{
+        scale: 0.8;
+        margin: -109px auto;
+    }
+    figcaption{
+        font-size: large;
+        margin-left: 20%;
+    }
+
+    .cardsArea{
+        display: grid;
+        align-items: center;
+        padding: 0px 200px;
+    }
+
+    .card{
+        width:100%;
+    }
+    figure > img{
+        max-width: 60%;
+        max-height: 60%;
+    }
 }
